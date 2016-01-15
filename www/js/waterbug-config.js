@@ -12,12 +12,26 @@ var logos = {
         h: 80, // height of logo
         display: 'Lunchbox'
     },
-    'socializr': {
-        whitePath: '../img/icon-socializr-white.svg',
-        blackPath: '../img/icon-socializr-black.svg',
+    'wbez-wide': {
+        whitePath: '../img/icon-wbez-white.svg', // path to white logo
+        blackPath: '../img/icon-wbez-black.svg', // path to black logo
+        w: 200, // width of logo
+        h: 45, // height of logo
+        display: 'WBEZ wide'
+    },
+    'wbez-stacked': {
+        whitePath: '../img/icon-wbez-stacked-white.svg', // path to white logo
+        blackPath: '../img/icon-wbez-stacked-black.svg', // path to black logo
+        w: 100, // width of logo
+        h: 137, // height of logo
+        display: 'WBEZ stacked'
+    },
+    'curious-city': {
+        whitePath: '../img/icon-curious-city-white.svg',
+        blackPath: '../img/icon-curious-city-black.svg',
         w: 150,
         h: 51,
-        display: 'Socializr'
+        display: 'Curious City'
     }
 };
 
@@ -35,11 +49,11 @@ var fontShadowOffsetY = 0; // font shadow offset y
 var fontShadowBlur = 10; // font shadow blur
 
 // copyright options
-var orgName = 'Your News Organization';
+var orgName = 'WBEZ';
 var freelanceString = 'for ' + orgName;
 
 var copyrightOptions = {
-    'internal': {
+    'WBEZ': {
         showPhotographer: true, // show the photographer input box
         showSource: false, // show the source input box
         photographerRequired: false, // require a photographer
