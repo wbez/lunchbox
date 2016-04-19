@@ -5,26 +5,26 @@ var elementPadding = 40; // padding around the logo and credit text
 // logo configuration
 // the name of the logo object should match the value of the corresponding radio button in the HTML.
 var logos = {
-    'lunchbox': {
-        whitePath: '../img/icon-lunchbox-white.svg', // path to white logo
-        blackPath: '../img/icon-lunchbox-black.svg', // path to black logo
-        w: 100, // width of logo
-        h: 80, // height of logo
-        display: 'Lunchbox'
-    },
+    // 'lunchbox': {
+    //     whitePath: '../img/icon-lunchbox-white.svg', // path to white logo
+    //     blackPath: '../img/icon-lunchbox-black.svg', // path to black logo
+    //     w: 100, // width of logo
+    //     h: 80, // height of logo
+    //     display: 'Lunchbox'
+    // },
     'wbez-wide': {
-        whitePath: '../img/icon-wbez-white.svg', // path to white logo
-        blackPath: '../img/icon-wbez-black.svg', // path to black logo
+        whitePath: '../img/icon-wbez-white-darkgrey-light-grey.svg', // path to white logo
+        blackPath: '../img/icon-wbez-black-darkgrey-light-grey.svg', // path to black logo
         w: 200, // width of logo
         h: 45, // height of logo
         display: 'WBEZ wide'
     },
     'wbez-stacked': {
-        whitePath: '../img/icon-wbez-stacked-white.svg', // path to white logo
-        blackPath: '../img/icon-wbez-stacked-black.svg', // path to black logo
+        whitePath: '../img/icon-wbez-stacked-white-darkgrey-light-grey.svg', // path to white logo
+        blackPath: '../img/icon-wbez-stacked-black-darkgrey-light-grey.svg', // path to black logo
         w: 100, // width of logo
         h: 137, // height of logo
-        display: 'WBEZ stacked'
+        display: 'WBEZ stack'
     },
     'curious-city': {
         whitePath: '../img/icon-curious-city-white.svg',
@@ -97,7 +97,7 @@ var copyrightOptions = {
 
 // app load defaults
 var currentCrop = 'twitter'; // default crop size
-var currentLogo = 'lunchbox'; // default logo slug
+var currentLogo = 'wbez-wide'; // default logo slug
 var currentLogoColor = 'white'; // default logo color
 var currentTextColor = 'white'; // default text color
 var defaultImage = '../img/test-kitten.jpg'; // path to image to load as test image

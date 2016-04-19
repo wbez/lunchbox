@@ -97,24 +97,25 @@ var updateTimestamp = function() {
  */
 var saveImage = function() {
     // first check if the quote actually fits
-    if (($factList.offset().top + $factList.height()) > $logoWrapper.offset().top) {
-        var tooTallMessage = "Your list is too long. Shorten the text or choose a smaller font-size.";
-    }
+    // Never mind, we trust you
+    // if (($factList.offset().top + $factList.height()) > $logoWrapper.offset().top) {
+    //     var tooTallMessage = "Your list is too long. Shorten the text or choose a smaller font-size.";
+    // }
 
-    if ($kicker.width() > $poster.width()) {
-        var tooWideMessage = "Your headline is too wide. Shorten the headline.";
-    }
+    // if ($kicker.width() > $poster.width()) {
+    //     var tooWideMessage = "Your headline is too wide. Shorten the headline.";
+    // }
 
-    if (tooTallMessage || tooWideMessage) {
-          var alertMessage;
-          if (tooTallMessage && tooWideMessage) {
-              alertMessage = tooTallMessage + '\n' + tooWideMessage;
-          } else {
-              alertMessage = (tooTallMessage) ? tooTallMessage : tooWideMessage;
-          }
-          alert(alertMessage);
-          return;
-    }
+    // if (tooTallMessage || tooWideMessage) {
+    //       var alertMessage;
+    //       if (tooTallMessage && tooWideMessage) {
+    //           alertMessage = tooTallMessage + '\n' + tooWideMessage;
+    //       } else {
+    //           alertMessage = (tooTallMessage) ? tooTallMessage : tooWideMessage;
+    //       }
+    //       alert(alertMessage);
+    //       return;
+    // }
 
     $('canvas').remove();
     processText();
