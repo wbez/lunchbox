@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: @gray-lighter;
+    background: #dddddd;
     min-width: 680px;
 }
 
@@ -139,7 +139,7 @@ canvas {
     background: @bg-color;
     margin: @line-height;
     position: relative;
-    padding: @padding * 2;
+    padding: @padding * 2 @padding*2.5;
     font-size: @base-font-size * 5;
     line-height: 1 !important;
     overflow: hidden;
@@ -252,6 +252,12 @@ canvas {
         .show-credit {
             color: @theme5-credit-color;
         }
+
+        .quote& {
+            .left-quote {
+                color:@theme5-quote-color;
+            }
+        }
     }
     &.poster-theme6 {
         background: @theme6-bg-color;
@@ -273,6 +279,42 @@ canvas {
         }
         .show-credit {
             color: @theme6-credit-color;
+        }
+
+        .quote& {
+            .left-quote {
+                color:@theme6-quote-color;
+            }
+        }
+    }
+
+    &.poster-theme7 {
+        background-image: @theme7-bg-img;
+        color: @theme7-text-color;
+        background-size: 200%;
+        .logo-wrapper {
+            background: @theme7-bg-color;
+            color: @theme7-text-color;
+            background-image: @theme7-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme7-sq-logo-width @theme7-sq-logo-height;
+            width: @theme7-sq-logo-width + @padding;
+            height: @theme7-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme7-16x9-logo-width @theme7-16x9-logo-height;
+                width: @theme7-16x9-logo-width + @padding;
+                height: @theme7-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme4-credit-color;
+        }
+
+        .quote& {
+            .left-quote {
+                color:@theme7-quote-color;
+            }
         }
     }
 
@@ -322,6 +364,7 @@ canvas {
             left: @padding * 2;
             font-weight: @quote-font-weight;
             margin-left: @quote-mark-margin;
+            color:red;
         }
     }
 
