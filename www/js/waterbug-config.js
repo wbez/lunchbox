@@ -39,7 +39,16 @@ var logos = {
         w: 150,
         h: 150,
         display: 'Sound Opinions Stacked'
-    }
+    },
+    
+    'nerdette': {
+        whitePath: '../img/nerdette-stacked-white.svg',
+        blackPath: '../img/nerdette-stacked.svg',
+        w: 150,
+        h: 150,
+        display: 'Nerdette'
+    },
+
 };
 
 // logo opacity for colors
