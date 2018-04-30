@@ -26,12 +26,19 @@ var logos = {
         h: 137, // height of logo
         display: 'WBEZ stack'
     },
-    'curious-city': {
-        whitePath: '../img/icon-curious-city-white.svg',
-        blackPath: '../img/icon-curious-city-black.svg',
+    'sound-opinions-wide': {
+        whitePath: '../img/Sound Opinions_horizontal_for_dark_backgrounds.svg',
+        blackPath: '../img/Sound Opinions_horizontal_for_light_backgrounds.svg',
+        w: 200,
+        h: 100,
+        display: 'Sound Opinions Wide'
+    },
+    'sound-opinions-stack': {
+        whitePath: '../img/Sound Opinions_stacked_for_dark_backgrounds.svg',
+        blackPath: '../img/Sound Opinions_stacked_for_light_backgrounds.svg',
         w: 150,
-        h: 51,
-        display: 'Curious City'
+        h: 150,
+        display: 'Sound Opinions Stacked'
     }
 };
 

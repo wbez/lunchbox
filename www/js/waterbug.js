@@ -120,7 +120,7 @@ var buildForm = function() {
     }
 
     if (logoKeys.length > 1) {
-        $logosWrapper.append('<div class="btn-group btn-group-justified btn-group-sm logos" data-toggle="buttons"></div>');
+        $logosWrapper.append('<div class="btn-group-sm logos" data-toggle="buttons"></div>');
         var $logos = $('.logos');
         for (var j = 0; j < logoKeys.length; j++) {
             var key = logoKeys[j];

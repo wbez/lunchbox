@@ -231,6 +231,51 @@ canvas {
         }
     }
 
+    &.poster-theme5 {
+        background: @theme5-bg-color;
+        color: @theme5-text-color;
+        .logo-wrapper {
+            background: @theme5-bg-color;
+            color: @theme5-text-color;
+            background-image: @theme5-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme5-sq-logo-width @theme5-sq-logo-height;
+            width: @theme5-sq-logo-width + @padding;
+            height: @theme5-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme5-16x9-logo-width @theme5-16x9-logo-height;
+                width: @theme5-16x9-logo-width + @padding;
+                height: @theme5-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme5-credit-color;
+        }
+    }
+    &.poster-theme6 {
+        background: @theme6-bg-color;
+        color: @theme6-text-color;
+        .logo-wrapper {
+            background: @theme6-bg-color;
+            color: @theme6-text-color;
+            background-image: @theme6-logo-path;
+            background-repeat: no-repeat;
+            background-size: @theme6-sq-logo-width @theme6-sq-logo-height;
+            width: @theme6-sq-logo-width + @padding;
+            height: @theme6-sq-logo-height + @padding;
+
+            .sixteen-by-nine& {
+                background-size: @theme6-16x9-logo-width @theme6-16x9-logo-height;
+                width: @theme6-16x9-logo-width + @padding;
+                height: @theme6-16x9-logo-height + @padding;
+            }
+        }
+        .show-credit {
+            color: @theme6-credit-color;
+        }
+    }
+
     &.sixteen-by-nine {
         height: 360px;
         padding: @padding;
