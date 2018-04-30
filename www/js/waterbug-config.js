@@ -39,7 +39,6 @@ var logos = {
         w: 150,
         h: 150,
         display: 'Sound Opinions Stacked'
-<<<<<<< HEAD
     },
     
     'nerdette': {
@@ -48,11 +47,7 @@ var logos = {
         w: 150,
         h: 150,
         display: 'Nerdette'
-    },
-
-=======
     }
->>>>>>> master
 };
 
 // logo opacity for colors
