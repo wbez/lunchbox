@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background: @gray-lighter;
+    background: #dddddd;
     min-width: 680px;
 }
 
@@ -139,7 +139,7 @@ canvas {
     background: @bg-color;
     margin: @line-height;
     position: relative;
-    padding: @padding * 2;
+    padding: @padding * 2 @padding*2.5;
     font-size: @base-font-size * 5;
     line-height: 1 !important;
     overflow: hidden;
@@ -252,6 +252,12 @@ canvas {
         .show-credit {
             color: @theme5-credit-color;
         }
+
+        .quote& {
+            .left-quote {
+                color:@theme5-quote-color;
+            }
+        }
     }
     &.poster-theme6 {
         background: @theme6-bg-color;
@@ -273,6 +279,12 @@ canvas {
         }
         .show-credit {
             color: @theme6-credit-color;
+        }
+
+        .quote& {
+            .left-quote {
+                color:@theme6-quote-color;
+            }
         }
     }
 
@@ -297,6 +309,12 @@ canvas {
         }
         .show-credit {
             color: @theme4-credit-color;
+        }
+
+        .quote& {
+            .left-quote {
+                color:@theme7-quote-color;
+            }
         }
     }
 
@@ -346,6 +364,7 @@ canvas {
             left: @padding * 2;
             font-weight: @quote-font-weight;
             margin-left: @quote-mark-margin;
+            color:red;
         }
     }
 
