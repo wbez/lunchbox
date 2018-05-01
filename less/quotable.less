@@ -257,6 +257,10 @@ canvas {
             .left-quote {
                 color:@theme5-quote-color;
             }
+
+            p:last-child:after {
+                color:@theme5-text-color;
+            }
         }
     }
     &.poster-theme6 {
@@ -285,11 +289,16 @@ canvas {
             .left-quote {
                 color:@theme6-quote-color;
             }
+
+            p:last-child:after {
+                color:@theme6-text-color;
+            }
         }
     }
 
     &.poster-theme7 {
         background-image: @theme7-bg-img;
+        background-color:@theme7-bg-color;
         color: @theme7-text-color;
         background-size: 200%;
         .logo-wrapper {
@@ -314,6 +323,10 @@ canvas {
         .quote& {
             .left-quote {
                 color:@theme7-quote-color;
+            }
+
+             p:last-child:after {
+                color:@theme7-text-color;
             }
         }
     }
@@ -407,6 +420,7 @@ canvas {
             p:last-child:after {
                 content: @quote-end-symbol;
                 font-weight: @quote-font-weight;
+                color:red;
             }
 
         }
