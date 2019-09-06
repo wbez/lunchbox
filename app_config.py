@@ -26,7 +26,7 @@ GITHUB_USERNAME = 'wbez'
 REPOSITORY_URL = 'git@github.com:%s/%s.git' % (GITHUB_USERNAME, REPOSITORY_NAME)
 REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
 
-DEV_CONTACT = 'Chris Hagan chagan@wbez.org'
+DEV_CONTACT = 'Paula Friedrich pfriedrich@wbez.org'
 
 """
 DEPLOYMENT

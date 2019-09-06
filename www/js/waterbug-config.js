@@ -47,6 +47,13 @@ var logos = {
         w: 150,
         h: 150,
         display: 'Nerdette'
+    },
+    'south side stories': {
+        whitePath: '../img/logo-ss-stories.png',
+        blackPath: '../img/logo-ss-stories.png',
+        w: 125,
+        h: 95,
+        display: 'South Side Stories'
     }
 };
 
