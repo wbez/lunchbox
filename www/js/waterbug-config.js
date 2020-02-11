@@ -1,6 +1,34 @@
 // widths and padding
-var canvasWidth = 1000; // this will be the exported width of the image
 var elementPadding = 40; // padding around the logo and credit text
+
+// Crop options
+var currentCrop = "cinema"; // default crop size
+var cropOptions = {
+    cinema: {
+        display: "16:9",
+        width: 1000,
+        height: Math.round(1000 / (16 / 9))
+    },
+    twitter: {
+        display: '2:1 <i class="fa fa-twitter"></i>',
+        width: 1024,
+        height: 1024 / 2
+    },
+    facebook: {
+        display: '<i class="fa fa-facebook"></i>',
+        width: 1200,
+        height: 630
+    },
+    instagram: {
+        display: '1:1 <i class="fa fa-instagram"></i>',
+        width: 1080,
+        height: 1080
+    },
+    original: {
+        display: "Original",
+        width: 1000
+    }
+};
 
 // logo configuration
 // the name of the logo object should match the value of the corresponding radio button in the HTML.
@@ -12,115 +40,115 @@ var logos = {
     //     h: 80, // height of logo
     //     display: 'Lunchbox'
     // },
-    'wbez-wide': {
-        whitePath: '../img/icon-wbez-white-darkgrey-light-grey.svg', // path to white logo
-        blackPath: '../img/icon-wbez-black-darkgrey-light-grey.svg', // path to black logo
+    "wbez-wide": {
+        whitePath: "../img/icon-wbez-white-darkgrey-light-grey.svg", // path to white logo
+        blackPath: "../img/icon-wbez-black-darkgrey-light-grey.svg", // path to black logo
         w: 200, // width of logo
         h: 45, // height of logo
-        display: 'WBEZ wide'
+        display: "WBEZ wide"
     },
-    'wbez-stacked': {
-        whitePath: '../img/icon-wbez-stacked-white-darkgrey-light-grey.svg', // path to white logo
-        blackPath: '../img/icon-wbez-stacked-black-darkgrey-light-grey.svg', // path to black logo
+    "wbez-stacked": {
+        whitePath: "../img/icon-wbez-stacked-white-darkgrey-light-grey.svg", // path to white logo
+        blackPath: "../img/icon-wbez-stacked-black-darkgrey-light-grey.svg", // path to black logo
         w: 100, // width of logo
         h: 137, // height of logo
-        display: 'WBEZ stack'
+        display: "WBEZ stack"
     },
-    'sound-opinions-wide': {
-        whitePath: '../img/Sound Opinions_horizontal_for_dark_backgrounds.svg',
-        blackPath: '../img/Sound Opinions_horizontal_for_light_backgrounds.svg',
+    "sound-opinions-wide": {
+        whitePath: "../img/Sound Opinions_horizontal_for_dark_backgrounds.svg",
+        blackPath: "../img/Sound Opinions_horizontal_for_light_backgrounds.svg",
         w: 200,
         h: 100,
-        display: 'Sound Opinions Wide'
+        display: "Sound Opinions Wide"
     },
-    'sound-opinions-stack': {
-        whitePath: '../img/Sound Opinions_stacked_for_dark_backgrounds.svg',
-        blackPath: '../img/Sound Opinions_stacked_for_light_backgrounds.svg',
+    "sound-opinions-stack": {
+        whitePath: "../img/Sound Opinions_stacked_for_dark_backgrounds.svg",
+        blackPath: "../img/Sound Opinions_stacked_for_light_backgrounds.svg",
         w: 150,
         h: 150,
-        display: 'Sound Opinions Stacked'
+        display: "Sound Opinions Stacked"
     },
-    
-    'nerdette': {
-        whitePath: '../img/nerdette-stacked-white.svg',
-        blackPath: '../img/nerdette-stacked.svg',
+
+    nerdette: {
+        whitePath: "../img/nerdette-stacked-white.svg",
+        blackPath: "../img/nerdette-stacked.svg",
         w: 150,
         h: 150,
-        display: 'Nerdette'
+        display: "Nerdette"
     },
-    'south side stories': {
-        whitePath: '../img/logo-ss-stories.png',
-        blackPath: '../img/logo-ss-stories.png',
+    "south side stories": {
+        whitePath: "../img/logo-ss-stories.png",
+        blackPath: "../img/logo-ss-stories.png",
         w: 125,
         h: 95,
-        display: 'South Side Stories'
+        display: "South Side Stories"
     }
 };
 
 // logo opacity for colors
-var whiteLogoAlpha = '0.8';
-var blackLogoAlpha = '0.6';
+var whiteLogoAlpha = "0.8";
+var blackLogoAlpha = "0.6";
 
 // type
-var fontWeight = 'normal'; // font weight for credit
-var fontSize = '15pt'; // font size for credit
+var fontWeight = "normal"; // font weight for credit
+var fontSize = "15pt"; // font size for credit
 var fontFace = "Helvetica"; // font family for credit
-var fontShadow = 'rgba(0,0,0,0.7)'; // font shadow for credit
+var fontShadow = "rgba(0,0,0,0.7)"; // font shadow for credit
 var fontShadowOffsetX = 0; // font shadow offset x
 var fontShadowOffsetY = 0; // font shadow offset y
 var fontShadowBlur = 10; // font shadow blur
 
 // copyright options
-var orgName = 'WBEZ';
-var freelanceString = 'for ' + orgName;
+var orgName = "WBEZ";
+var freelanceString = "for " + orgName;
 
 var copyrightOptions = {
-    'WBEZ': {
+    WBEZ: {
         showPhotographer: true, // show the photographer input box
         showSource: false, // show the source input box
         photographerRequired: false, // require a photographer
         sourceRequired: false, // require a source
         source: orgName, // How the source should appear on the image, e.g. 'NPR'
-        display: orgName, // How the option will appear in the dropdown menu   
+        display: orgName // How the option will appear in the dropdown menu
     },
-    'freelance': {
+    freelance: {
         showPhotographer: true,
         showSource: false,
         photographerRequired: true,
         sourceRequired: false,
         source: freelanceString,
-        display: 'Freelance' 
+        display: "Freelance",
+        delimiter: " "
     },
-    'ap': {
+    ap: {
         showPhotographer: true,
         showSource: false,
         photographerRequired: false,
         sourceRequired: false,
-        source: 'AP',
-        display: 'AP' 
+        source: "AP",
+        display: "AP"
     },
-    'getty': {
+    getty: {
         showPhotographer: true,
         showSource: false,
         photographerRequired: false,
         sourceRequired: false,
-        source: 'Getty Images',
-        display: 'Getty' 
+        source: "Getty Images",
+        display: "Getty"
     },
-    'thirdParty': {
+    thirdParty: {
         showPhotographer: true,
         showSource: true,
         photographerRequired: false,
         sourceRequired: true,
-        source: '',
-        display: 'Third Party/Courtesy' 
+        source: "",
+        display: "Third Party/Courtesy"
     }
-}
+};
 
 // app load defaults
-var currentCrop = 'twitter'; // default crop size
-var currentLogo = 'wbez-wide'; // default logo slug
-var currentLogoColor = 'white'; // default logo color
-var currentTextColor = 'white'; // default text color
-var defaultImage = '../img/test-kitten.jpg'; // path to image to load as test image
-var defaultLogo = logos[currentLogo]['whitePath'] // path to default logo
+var currentLogo = "wbez-wide"; // default logo slug
+var currentLogoColor = "white"; // default logo color
+var currentTextColor = "white"; // default text color
+var defaultImage = "../img/test-kitten.jpg"; // path to image to load as test image
+var defaultLogo = logos[currentLogo]["whitePath"]; // path to default logo

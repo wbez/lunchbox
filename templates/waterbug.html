@@ -10,18 +10,12 @@
     <div class="canvas-wrapper">
         <div class="canvas-cell">
             <canvas id="imageCanvas" class="is-draggable"></canvas>
-            <p class="drag-help">Drag the image to adjust the crop.</p>
         </div>
+        <p class="drag-help">Drag the image to adjust the crop.</p>
     </div>
     <div class="form controls">
         <div class="controls-wrapper">
             <form autocomplete="off">
-
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="disabled">Image</li>
-                    <li role="presentation" class="active"><a href="#image-file" data-toggle="pill">File</a></li>
-                    <li role="presentation"><a href="#image-url" data-toggle="pill">URL</a></li>
-                </ul>
 
                 <div class="tab-content">
                     <div class="form-group tab-pane active" id="image-file">
@@ -61,18 +55,9 @@
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-lg-6">
+                    <div class="form-group col-lg-6 crops-wrapper">
                         <label for="crop">Crop</label>
-                        <div class="btn-group btn-group-justified btn-group-sm" data-toggle="buttons">
-                            <label class="btn btn-primary active">
-                                <input type="radio" name="crop" id="twitter" value="twitter" checked>
-                                16x9 <i class="fa fa-twitter"></i>
-                            </label>
-                            <label class="btn btn-primary">
-                              <input type="radio" name="crop" id="original" value="original">
-                              Original
-                            </label>
-
+                        <div class="btn-group btn-group-justified btn-group-sm crops" data-toggle="buttons">
                         </div>
                     </div>
 
@@ -81,7 +66,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-lg-6 col-lg-push-6">
+                    <div class="form-group col-lg-6">
                         <label for="logoColor">Logo color</label>
                         <div class="btn-group btn-group-justified btn-group-sm" data-toggle="buttons">
                           <label class="btn btn-primary active">
@@ -94,7 +79,7 @@
                           </label>
                         </div>
                     </div>
-                    <div class="form-group col-lg-6 col-lg-pull-6">
+                    <div class="form-group col-lg-6">
                         <label for="textColor">Text color</label>
                         <div class="btn-group btn-group-justified btn-group-sm" data-toggle="buttons">
                           <label class="btn btn-primary active">
@@ -104,6 +89,50 @@
                           <label class="btn btn-primary">
                             <input type="radio" name="textColor" id="blackText" value="black">
                             Black
+                          </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                        <label for="logoPosition">Logo position</label>
+                        <div class="btn-group btn-group-justified btn-group-sm" data-toggle="buttons">
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="logoPosition" id="tlLogoPosition" value="tl" checked>
+                            &#x25E4;
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="logoPosition" id="trLogoPosition" value="tr">
+                            &#x25E5;
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="logoPosition" id="blLogoPosition" value="bl">
+                            &#x25E3;
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="logoPosition" id="brLogoPosition" value="br">
+                            &#x25E2;
+                          </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-6">
+                        <label for="textPosition">Copyright position</label>
+                        <div class="btn-group btn-group-justified btn-group-sm" data-toggle="buttons">
+                          <label class="btn btn-primary">
+                            <input type="radio" name="textPosition" id="tlTextPosition" value="tl">
+                            &#x25E4;
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="textPosition" id="trTextPosition" value="tr">
+                            &#x25E5;
+                          </label>
+                          <label class="btn btn-primary">
+                            <input type="radio" name="textPosition" id="blTextPosition" value="bl">
+                            &#x25E3;
+                          </label>
+                          <label class="btn btn-primary active">
+                            <input type="radio" name="textPosition" id="brTextPosition" value="br" checked>
+                            &#x25E2;
                           </label>
                         </div>
                     </div>
