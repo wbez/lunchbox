@@ -82,6 +82,13 @@ var logos = {
         w: 125,
         h: 95,
         display: "South Side Stories"
+    },
+    motive: {
+        whitePath: "../img/motive-white.png",
+        blackPath: "../img/motive-dark.png",
+        w: 130,
+        h: 64,
+        display: "Motive"
     }
 };
 
