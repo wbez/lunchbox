@@ -41,37 +41,37 @@ var logos = {
     //     display: 'Lunchbox'
     // },
     "wbez-wide": {
-        whitePath: "../img/icon-wbez-white-darkgrey-light-grey.svg", // path to white logo
+        whitePath: "../img/icon-wbez-white-darkgrey-light-grey.png", // path to white logo
         blackPath: "../img/icon-wbez-black-darkgrey-light-grey.svg", // path to black logo
-        w: 200, // width of logo
+        w: 346, // width of logo
         h: 45, // height of logo
         display: "WBEZ wide"
     },
     "wbez-stacked": {
-        whitePath: "../img/icon-wbez-stacked-white-darkgrey-light-grey.svg", // path to white logo
-        blackPath: "../img/icon-wbez-stacked-black-darkgrey-light-grey.svg", // path to black logo
+        whitePath: "../img/icon-wbez-stacked-white-darkgrey-light-grey.png", // path to white logo
+        blackPath: "../img/icon-wbez-stacked-black-darkgrey-light-grey.png", // path to black logo
         w: 100, // width of logo
-        h: 137, // height of logo
+        h: 140, // height of logo
         display: "WBEZ stack"
     },
     "sound-opinions-wide": {
-        whitePath: "../img/Sound Opinions_horizontal_for_dark_backgrounds.svg",
-        blackPath: "../img/Sound Opinions_horizontal_for_light_backgrounds.svg",
+        whitePath: "../img/Sound_Opinions_horizontal_for_dark_backgrounds.png",
+        blackPath: "../img/Sound_Opinions_horizontal_for_light_backgrounds.png",
         w: 200,
         h: 100,
         display: "Sound Opinions Wide"
     },
     "sound-opinions-stack": {
-        whitePath: "../img/Sound Opinions_stacked_for_dark_backgrounds.svg",
-        blackPath: "../img/Sound Opinions_stacked_for_light_backgrounds.svg",
+        whitePath: "../img/Sound_Opinions_stacked_for_dark_backgrounds.png",
+        blackPath: "../img/Sound_Opinions_stacked_for_light_backgrounds.png",
         w: 150,
-        h: 150,
+        h: 138,
         display: "Sound Opinions Stacked"
     },
 
     nerdette: {
-        whitePath: "../img/nerdette-stacked-white.svg",
-        blackPath: "../img/nerdette-stacked.svg",
+        whitePath: "../img/nerdette-stacked-white.png",
+        blackPath: "../img/nerdette-stacked.png",
         w: 150,
         h: 150,
         display: "Nerdette"
