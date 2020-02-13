@@ -103,8 +103,6 @@ function saveImage() {
             window.oCanvas = window.oCanvas[0];
             var strDataURI = window.oCanvas.toDataURL();
 
-            console.log(strDataURI);
-
             var quote = $("blockquote")
                 .text()
                 .split(" ", 5);
